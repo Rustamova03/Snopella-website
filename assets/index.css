@@ -86,10 +86,11 @@
   }
   .shop button{
     background-color: #206363;
-    padding: 8px 20px;
+    padding: 8px 0;
     color: white;
     border: none;
     border-radius: 5px;
+    width: 30%;
   }
   .sectiontworight{
       display: flex;
@@ -102,6 +103,7 @@
   .sectionthree{
     background-color: #F7F7F7;
     padding: 40px;
+    margin-bottom: 100px;
   }
   .delivery{
     display: flex;
@@ -127,25 +129,26 @@
   
   .box{
     display: flex;
-    padding: 50px 0;
-    gap: 30px;
+    gap: 50px   ;
+    /* justify-content: space-around; */
+    /* align-items: center; */
+    /* gap: 30px; */
   }
-  .text{
-    display: flex;
-    padding: 15px;
-    align-items: flex-start;
-    width: 50%;
-    
-  }
+
   .boxes{
-    display: flex;
-    background-color:#F5F5F5;
-    width: 264px;
-    height: 162px;
+    padding: 5px 5px 150px 5px;
+    width: 25%;
+    background-color:#F5F5F5; 
+    position: relative;
   }
+
+
   .boxes img{
-    width: 50%;
-  }
+    position: absolute;
+  right: 0;
+  bottom: 0;
+ 
+   } 
   .alltop{
     display: flex;
     align-items: center;
@@ -160,14 +163,17 @@
   .allbottom{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
   }
+
   .boxing{
     width: 30%;
     padding: 15px 20px ;
     background-color: #e8e5e5;
   }
-  
+  .laptop{
+    text-align: center;
+  }
   .head{
     display: flex;
     align-items: center;
@@ -253,4 +259,76 @@
     justify-content: space-between;
     align-items: center;
     padding: 50px 0;
+  }
+  
+  @media screen and (max-width:767px) {
+    header{
+      display: none;
+    }
+    .sectionone{
+      display: none;
+    }
+    .sectiontwo{
+      display: none;
+    }
+    .sectionthree{
+      display: none;
+    }
+    .box{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+.alltop{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+  .boxes{
+    width: 80%;
+  }
+  .allbottom{
+    display: flex;
+    flex-direction: column;
+  }
+  .boxing{
+    width: 80%;
+  }
+  .footertop{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+   
+  }
+ 
+  .footerbottom{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footerbottomright , .footerbottomleft{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+  .sendmes {
+    width: 100%;
+    text-align: center;
+  }
+  .sendmes button{
+    margin-left: 150px;
+  }
+  .foot{
+    display: flex;
+    flex-direction: column;
+  }
+  footer{
+    text-align: center;
+  }
   }
